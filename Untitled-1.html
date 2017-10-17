@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+ <html>
+ <head>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <title>Responsive Layout</title>
+ <style>
+* {
+  box-sizing: border-box;
+}
+ 
+ /********** Base styles **********/
+
+ h1 {
+   color: #D82C2F;
+   margin-bottom: 30px;
+   position: center;/*****Basligi ortalamak icin*****/
+   font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+ }
+	 
+ #p1,#p2,#p3{
+			 background-color: gray;
+	         border-style: solid;
+			 border-width: 1px;
+			 width: 150px;
+			 height: 250px;
+	 	     font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+			 
+		 }
+ p{
+	 border-left-style: solid;
+	 border-width: 1px;
+	 width: 100px;
+	 height: 25px;
+	 float: right;
+	 margin: 0 0 3px 3px;		 
+	}
+ #p4{
+	 background-color: #FF8600;
+	 }
+ #p5{
+	 background-color: #69D3AD;
+	 }
+ #p6{
+	 background-color: #4872D3;
+	 }
+
+ /********** Desktop only **********/
+	 @media (min-width: 992px) {
+		 #p1,#p2,#p3{
+			 width: 32.33%;
+			 float: left;
+			 margin: 0 7px 4px 0;
+		 }
+	 }
+ /********** Tablet only **********/
+	 @media (min-width: 768px) and (max-width:991px) {
+		 #p1,#p2{
+			 width: 48.66%;
+			 float: left;
+			 margin: 0 7px 4px 0;
+		 }
+		 #p3{
+			 width: 98.20%;
+			 float: left;
+			 margin: 0 7px 4px 0;
+		 }
+	 }
+		  
+ /********** Mobile only **********/
+	 @media (max-width: 767px){
+		 #p1,#p2,#p3{
+			 width: 100%;
+			 float: left;
+			 margin:0 4px 4px 0;
+		 }
+	 }
+	 
+ </style>
+ </head>
+ <body>
+	 <h1 align="center">Kayseri Mutfağı</h1>
+	 
+	 <div id="p1"><p id="p4" align="center">Mantı</p><br /><br />Mantı, hamur ve etin kullanılmasıyla yapılan Kayseri’nin en gözde yemeğidir. Araştırmalara göre 36 çeşit mantı pişirilmektedir. Bunlar arasında en yaygın olanı etli mantıdır.</div>
+	 <div id="p2"><p id="p5" align="center">Yağlama</p><br /><br />Kayseri'ye özgü yufka, kıyma, salçalı sos ve yoğurttan oluşan bir yemek.
+Şebitlerin (yufka) üst üste konup, her katın arasına bol sulu ve salçalı kıymanın konmasıyla yapılır.</div>
+	 <div id="p3"><p id="p6" align="center">Cıvıklı</p><br /><br />Hamurun üzerine serilen ve özel olarak yapılan et malzemesinin fırında (özellikle taş fırında) pişirilmesiyle yapılır. Günümüzde adına etli pide de denmektedir. Yapılışı itibarı ile cıvıklıya benzemediği için etli pide denmesi de doğrudur.</div>
+  
+  </body>
+ </html> 
